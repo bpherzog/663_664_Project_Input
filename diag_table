@@ -1,0 +1,84 @@
+MOM5_NA_test simulation
+1980 1 1 0 0 0
+#output files
+"soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc",      -1,  "days", 1, "days", "time",  5, "days"
+"soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc",        -1,  "days", 1, "days", "time",  5, "days"
+#"soda4_na_10dy_transport_or%4yr%2mo%2dy_%2hr%2mi%2sc",  1,  "days", 1, "days", "time", 10, "days"
+#"soda4_na_ssh_or%4yr%2mo%2dy_%2hr%2mi%2sc",       5,  "days", 1, "days", "time",  5, "days"
+#==========================================================================
+# Prognostic fields:
+# 3d fields
+"ocean_model","geolon_t","geolon_t",    "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t",    "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","temp","temp",            "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","salt","salt",            "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","u","u",                  "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","v","v",                  "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+# 2d fields 
+"ocean_model","sea_level","ssh",        "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","eta_t","etat",           "soda4_na_ssh_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","eta_t_mod","etatmod",    "soda4_na_ssh_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","eta_t_bar","etatbar",    "soda4_na_ssh_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","mld","mld",              "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","mld_dtheta","mlt",       "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","potrho_mix_depth","mlp", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","mld_dsalt","mls",        "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","pbot_t","pbot",          "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","pb","pb",                "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","anompb","anompb",        "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","subduction","sbd",       "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","subduction_mld","sbd_mld",   "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","subduction_dhdt","sbd_dhdt", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","subduction_horz","sbd_horz", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","subduction_vert","sbd_vert", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+# diagnostic fields
+# 3d fields
+"ocean_model","wt","wt",                "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","pot_rho_0","prho",       "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+#"ocean_model","tx_trans","tx_trans",    "soda4_na_10dy_transport_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","ty_trans","ty_trans",    "soda4_na_10dy_transport_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+# 2d fields
+"ocean_model","pme_river","pme_river",  "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","river","river",          "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","tau_x","taux",           "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","tau_y","tauy",           "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+"ocean_model","sfc_hflux_total","hflux_total",               "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_hflux_pme","hflux_pme",                   "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_hflux_coupler","hflux_cpl",               "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_hflux_from_water_prec","hflux_from_prec", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_hflux_from_water_evap","hflux_from_evap", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","evap_heat","evap_heat",                       "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","swflx","swflx",                               "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","lw_heat","lw_heat",                           "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sens_heat","sens_heat",                       "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","net_sfc_heating","net_heating",               "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+"ocean_model","sfc_salt_flux_restore","salt_flux_rstr",  "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_salt_flux_total","salt_flux_total",   "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_salt_flux_prec","sfc_salt_flux_prec", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+"ocean_model","sfc_salt_flux_evap","sfc_salt_flux_evap", "soda4_na_ocean_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+#"ocean_model","tx_trans_int_z","tx_int",    "soda4_na_10dy_transport_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#"ocean_model","ty_trans_int_z","ty_int",    "soda4_na_10dy_transport_or%4yr%2mo%2dy_%2hr%2mi%2sc","all",.false.,"none",2
+#
+# ocean scalar
+#
+#
+#==========================================================================
+# ICE DIAGNOSTICS:
+#=============================================================================== 
+#
+ "ice_model", "CN",         "cn",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "HI",         "hi",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "HS",         "hs",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "MI",         "mi",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "UI",         "ui",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "VI",         "vi",         "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "IX_TRANS",   "ix_trans",   "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+ "ice_model", "IY_TRANS",   "iy_trans",   "soda4_na_ice_or%4yr%2mo%2dy_%2hr%2mi%2sc", "all", .false., "none", 2
+#
